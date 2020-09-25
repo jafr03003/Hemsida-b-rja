@@ -1,3 +1,31 @@
-<title> Nått.css </title>
-body {
+body{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-template-rows:100px 50px auto 50px;
+	grid-template-areas:
+	"header header header"
+	"nav nav nav"
+	"main1 main2 aside"
+	"footer footer footer"
 	
+}
+
+header{
+	grid-area:header;
+}
+
+header h1{
+	text-align: center;
+}
+
+nav{
+	grid-area:nav;
+}
+
+nav ul{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+}
+
+footer{
+}
