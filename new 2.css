@@ -1,17 +1,20 @@
 body{
 	display:grid;
-	grid-template-columns:1fr 1fr 1fr;
+	background-color: lightblue;
+	grid-template-columns:1fr 1fr 1fr 1fr;
 	grid-template-rows:100px 50px auto 50px;
 	grid-template-areas:
-	"header header header"
-	"nav nav nav"
-	"main1 main2 aside"
-	"footer footer footer"
+	"header header header header"
+	"nav nav nav nav"
+	"main1 main2 main3 aside"
+	"footer footer footer footer"
 	
 }
 
 header{
 	grid-area:header;
+	padding: 10px;
+	border: 3px solid #fff;
 }
 
 header h1{
@@ -19,13 +22,30 @@ header h1{
 }
 
 nav{
+	border: 3px solid #fff;
+	background-color: lightgreen;
 	grid-area:nav;
+	color: white;
 }
 
 nav ul{
 	display:grid;
 	grid-template-columns:1fr 1fr 1fr 1fr;
+	color: white;
 }
 
 footer{
+	grid-area:footer;
+	text-align:center;
+}
+
+main{
+	
+}
+
+section:nth-child(1){
+	grid-area:main1;
+}
+section:nth-child(2){
+	grid-area:main2;
 }
