@@ -1,0 +1,105 @@
+body{
+	display:grid;
+	background-color#ade8f4;
+	background: linear-gradient(#ade8f4, white);
+	background-repeat:no-repeat;
+	height:95vh;
+	width:98vw;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	grid-template-rows:100px 50px auto 50px;
+	grid-template-areas:
+	"header header header header"
+	"nav nav nav nav"
+	"main1 main2 main3 aside"
+	"footer footer footer footer"
+	
+}
+
+header{
+	grid-area:header;
+	padding: 10px;
+	border: 3px solid #fff;
+}
+
+header h1{
+	text-align: center;
+}
+
+nav{
+	border: 3px solid #fff;
+	background-color: white;
+	grid-area:nav;
+	color: white;
+
+}
+
+nav ul{
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr 1fr;
+	color: white;
+	text-decoration:none;
+}
+
+footer{
+	grid-area:footer;
+	text-align:center;
+	border: 3px solid lightblue;
+}
+
+main{
+	align:center;
+}
+
+section:nth-child(1){
+	grid-area:main1;
+}
+section:nth-child(2){
+	grid-area:main2;
+}
+  
+table, tr, th, td{
+	border: 1px solid black;
+	border-collapse:collapse;
+	width: 1950px;
+	height: 40px;
+}
+
+tr:nth-child(even){
+	background-color:lightgray;
+}
+
+thead{
+	font-size: 150%;
+}
+tr:nth-child(odd){
+	background-color: lightgreen;
+}
+
+tr:nth-child(1){
+background-color: lightgreen;
+}
+tr.Namn1:nth-child(1){
+	background-color:blue;
+}
+
+th.Namn2{
+	background-color: red;
+}
+
+th.Namn3{
+		background-color: yellow;
+}
+
+th.Namn4{
+		background-color:black;
+}
+
+th.Namn5{
+	background-color: green;
+}
+th.left{
+	text-align: left;
+}
+th.right{
+	text-align: right;
+}
